@@ -9,7 +9,10 @@
 		"origins:vegetarian",
 		"triton:size",
 		"triton:health",
-		"triton:weakness"
+		"triton:weakness",
+		"triton:trident",
+		"triton:water_damage",
+		"triton:tridentdmg"
 	],
 	"icon": "minecraft:trident",
 	"order": 13,

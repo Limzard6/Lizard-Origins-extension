@@ -1,0 +1,12 @@
+{
+	"type": "origins:modify_projectile_damage",
+	"damage_condition": {
+		"type": "origins:projectile",
+		"projectile": "minecraft:trident"
+	},
+	"modifier": {
+		"operation": "addition",
+		"value": 0.5
+	},
+	"hidden": true
+}
