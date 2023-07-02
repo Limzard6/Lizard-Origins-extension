@@ -1,0 +1,19 @@
+{
+	"type": "origins:stacking_status_effect",
+    "min_stacks": 5,
+    "max_stacks": 10,
+    "duration_per_stack": 30,
+    "effect": {
+        "effect": "minecraft:weakness",
+        "is_ambient": true,
+        "show_particles": false,
+        "show_icon": false
+    },
+	"condition": {
+		"type": "origins:brightness",
+		"comparison": "<=",
+		"compare_to": 0.15
+	},
+	"name": "Cold Blood",
+	"description": "You're not built for low light conditions. Whenever in the dark you become weaker."
+}

@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Max health decrease",
+        "attribute": "minecraft:generic.max_health",
+        "value": -4,
+        "operation": "addition"
+    },
+	"name": "Fragile",
+	"description": "You have less health than others due to your small stature."
+}

@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"origins:water_breathing",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:swim_speed",
+		"origins:like_water",
+		"origins:conduit_power_on_land",
+		"origins:vegetarian",
+		"triton:size",
+		"triton:health",
+		"triton:weakness"
+	],
+	"icon": "minecraft:trident",
+	"order": 13,
+	"impact": 3,
+	"name": "Triton",
+	"description": "A short form version of Merling."
+}

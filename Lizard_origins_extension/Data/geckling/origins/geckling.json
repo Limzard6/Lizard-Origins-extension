@@ -1,0 +1,23 @@
+{
+	"powers": [
+		"origins:carnivore",
+		"origins:climbing",
+		"origins:swim_speed",
+		"origins:translucent",
+		"origins:light_armor",
+		"origins:extra_reach",
+		"origins:cat_vision",
+		"origins:more_exhaustion",
+		"geckling:cold_blood",
+		"geckling:gecko_legs",
+		"geckling:health",
+		"geckling:invis",
+		"geckling:invul",
+		"geckling:size"
+	],
+	"icon": "minecraft:jungle_log",
+	"order": 10,
+	"impact": 2,
+	"name": "Geckling",
+	"description": "A long forgotten origin, these creatures can climb walls and find it easier to see in the dark, however these abilities come at a cost."
+}
