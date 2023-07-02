@@ -10,8 +10,10 @@
         "show_icon": true
     },
     "condition": {
-        "type": "origins:submerged_in",
-		"fluid": "minecraft:air"
+		"type": "origins:fluid_height",
+		"fluid": "minecraft:water",
+		"comparison": "==",
+		"compare_to": 0
     },
 	"name": "Water dweller",
 	"description": "when in air you are weaker."
