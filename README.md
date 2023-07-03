@@ -47,4 +47,5 @@ Owlet:
 +you can boost in the air
 =You only eat meat
 -You cannot sleep.
--water and air are reversed.
+-you cannot use swords
+-water hurts you
