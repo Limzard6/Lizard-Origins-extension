@@ -1,0 +1,14 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "addition",
+        "value": 0.4,
+        "name": "Increased swim speed"
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:swimming"
+    },
+	"hidden": true
+}

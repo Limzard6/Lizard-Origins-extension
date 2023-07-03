@@ -1,0 +1,25 @@
+{
+	"powers": [
+		"origins:aqua_affinity",
+		"origins:aquatic",
+		"origins:carnivore",
+		"origins:swim_speed",
+		"origins:water_breathing",
+		"origins:weak_arms",
+		"origins:water_vision",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions",
+		"origins:like_water",
+		"axo:swimspeed",
+		"axo:model_color",
+		"axo:health",
+		"axo:bottle_maker",
+		"axo:water_boost",
+		"axo:size"
+	],
+	"icon": "minecraft:axolotl_bucket",
+	"order": 12,
+	"impact": 3,
+	"name": "Axolots",
+	"description": "A unique species of merling that prefer to jump between water sources."
+}
