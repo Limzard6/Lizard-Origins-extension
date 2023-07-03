@@ -40,4 +40,11 @@ Triton:
 =Can't eat meat
 -You have less health
 -When in air you are weaker
+Owlet:
++You have elytra
++You deal more damage while in fight
++you are slightly faster than others on ground
++you can boost in the air
+=You only eat meat
+-You cannot sleep.
 -water and air are reversed.
