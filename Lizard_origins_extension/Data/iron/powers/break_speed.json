@@ -1,0 +1,57 @@
+{
+    "type": "origins:modify_break_speed",
+    "block_condition": {
+        "type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:block",
+				"block": "minecraft:stone"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:iron_ore"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:copper_ore"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:coal_ore"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:redstone_ore"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:gold_ore"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:lapis_ore"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:diamond_ore"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:emerald_ore"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:netherrack"
+			},
+			{
+				"type": "origins:block",
+				"block": "minecraft:reinforced_deepslate"
+			}
+		]
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 1.0
+    },
+	"hidden": true
+}

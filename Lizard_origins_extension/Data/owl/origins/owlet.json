@@ -1,0 +1,19 @@
+{
+	"powers": [
+		"origins:elytra",
+		"origins:aerial_combatant",
+		"origins:carnivore",
+		"origins:tailwind",
+		"owl:sleep",
+		"owl:projdmg",
+		"owl:night",
+		"owl:boost",
+		"owl:size",
+		"owl:health"
+	],
+	"icon": "minecraft:spruce_sapling",
+	"order": 14,
+	"impact": 1,
+	"name": "Owlet",
+	"description": "An origin of similar descent to the elytrian except this group came to the overworld a long time ago and began to evolve in their new habitat."
+}
