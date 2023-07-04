@@ -1,0 +1,7 @@
+{
+	"type": "origins:prevent_sleep",
+	"message": "You better go out hunting.",
+	"set_spawn_point": true,
+	"name": "Always alert",
+	"description": "You cannot sleep."
+}

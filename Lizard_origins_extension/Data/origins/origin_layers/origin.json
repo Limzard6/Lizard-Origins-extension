@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"origins": [
+	 "geckling:geckling",
+	 "iron:irongolem",
+	 "axo:axolots",
+	 "triton:triton",
+	 "owl:owlet",
+	 "blazerian:blazerian"
+	]
+}
