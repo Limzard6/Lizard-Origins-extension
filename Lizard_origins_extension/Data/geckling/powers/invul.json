@@ -1,0 +1,9 @@
+{
+    "type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:name",
+		"name": "fall"
+	},
+	"name": "Drop tail",
+	"description": "When severely damaged you drop, an appendage in order to distract your attacker"
+}
