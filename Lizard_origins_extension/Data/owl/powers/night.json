@@ -1,8 +1,0 @@
-{
-	"type": "origins:night_vision",
-	"strength": 0.5,
-	"is_ambient": true,
-    "show_particles": false,
-    "show_icon": false,
-	"hidden": true
-}
