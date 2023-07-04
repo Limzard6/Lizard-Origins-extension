@@ -1,0 +1,15 @@
+{
+	"type": "origins:modify_damage_dealt",
+	"item_condition": {
+		"type": "origins:ingredient",
+		"ingredient": {
+			"tag": "minecraft:swords"
+		}
+	},
+	"modifier": {
+		"operation": "multiply_base",
+		"value": -1
+	},
+	"name": "Claws",
+	"description": "you cannot use swords."
+}
