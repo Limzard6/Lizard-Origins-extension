@@ -1,0 +1,60 @@
+{
+    "type": "origins:active_self",
+    "cooldown": 1,
+    "hud_render":
+    {
+        "should_render": false,
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 1
+    },
+    "key":
+    {
+        "key": "key.use",
+        "continuous": false
+    },
+    "condition":
+    {
+        "type": "origins:equipped_item",
+        "inverted": false,
+        "equipment_slot": "mainhand",
+        "item_condition":
+        {
+            "type": "origins:ingredient",
+            "inverted": false,
+            "ingredient":
+            {
+                "item": "iron_nugget"
+            }
+        }
+    },
+    "entity_action":
+    {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:equipped_item_action",
+                "equipment_slot": "mainhand",
+                "action":
+                {
+                    "type": "origins:consume",
+                    "amount": 1
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "permission_level": 4,
+                "command": "playsound minecraft:entity.player.burp player @a[distance=..10] ~ ~ ~ .3 1"
+            },
+            {
+                "type": "origins:feed",
+                "food": 2,
+                "saturation": 0
+			},
+			{
+				"type": "origins:heal",
+				"amount": 3
+			}
+        ]
+	},
+	"hidden": true
+}

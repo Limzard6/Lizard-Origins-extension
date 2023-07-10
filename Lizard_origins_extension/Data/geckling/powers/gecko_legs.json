@@ -1,0 +1,17 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+		"type": "origins:add_velocity",
+		"z": 1.5,
+		"space": "local"
+	},
+    "cooldown": 400,
+	"hud_render": {
+        "should_render": true
+    },
+	"key": {
+		"key": "key.jump"
+	},
+	"name": "Gecko Legs",
+	"description": "You have powerful legs that allow you to jump high in the air."
+}

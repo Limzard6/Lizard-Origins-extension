@@ -1,0 +1,263 @@
+{
+	"type": "origins:multiple",
+	"name": "Komodo",
+	"description": "For a period of time you become your strongest self and are able to utilise some long lost abilities.",
+	"time": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 50,
+		"start_value": 0,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+			"bar_index": 22,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "geckling:komodo_time",
+				"comparison": ">",
+				"compare_to": 0
+			}
+		},
+		"min_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:height 0.5 @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:width 0.5 @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale persist set true @s"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "geckling:komodo_normal",
+					"operation": "set",
+					"change": 120
+				}
+			]
+		}
+	},
+	"duration": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "geckling:komodo_time",	
+					"change": -1
+				}
+			]
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "geckling:komodo_time",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"healthwhile": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": 12.0,
+			"name": "Increased max health"
+		},
+		"tick_rate": 10,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "geckling:komodo_time",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"healthwhileweak": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.max_health",
+			"operation": "addition",
+			"value": 0.0,
+			"name": "Decreases max health"
+		},
+		"tick_rate": 10,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "geckling:komodo_normal",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"reswhile": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.armor_toughness",
+			"operation": "addition",
+			"value": 4,
+			"name": "increased armor toughness"
+		},
+		"tick_rate": 10,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "geckling:komodo_time",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"attackwhile": {
+		"type": "origins:stacking_status_effect",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "multiply_total",
+			"value": 0.5,
+			"name": "Increased damage"
+		},
+		"tick_rate": 10,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "geckling:komodo_time",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"start": {
+		"type": "origins:active_self",
+		"key": {
+			"key": "key.origins.secondary_active"
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:item.totem.use",
+					"volume": 4.0,
+					"pitch": 0.2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "tag @s add ignoresmell"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "effect give @a[distance=..50, tag=!ignoresmell] minecraft:glowing 50 0"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "tag @s remove ignoresmell"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:height 1.25 @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:width 1.25 @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale persit set true @s"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "geckling:komodo_time",
+					"operation": "set",
+					"change": 50
+				}
+			]
+		},
+		"cooldown": 4800,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 1,
+			"inverted": true
+		}
+			
+	},
+	"normal": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 120,
+		"start_value": 0,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 0,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "geckling:komodo_normal",
+				"comparison": ">",
+				"compare_to": 0
+			}
+		},
+		"max_action": {
+			"type": "origins:apply_effect",
+			"effects": [
+				{
+					"effect": "minecraft:glowing",
+					"duration": 1200,
+					"amplifier": 2,
+					"is_ambient": false,
+					"show_particles": false,
+					"show_icon": true
+				},
+				{
+					"effect": "minecraft:nausea",
+					"duration": 200,
+					"amplifier": 0,
+					"is_ambient": false,
+					"show_particles": false,
+					"show_icon": false
+				},
+				{
+					"effect": "minecraft:darkness",
+					"duration": 100,
+					"amplifier": 1,
+					"is_ambient":false,
+					"show_particles": false,
+					"show_icon": false
+				}
+			]
+		},
+		"min_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:clear_effect",
+					"effect": "minecraft:glowing"
+				},
+				{
+					"type": "origins:clear_effect",
+					"effect": "minecraft:nausea"
+				}
+			]
+		}
+	},
+	"changeweakened": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "geckling:komodo_normal",
+					"change": -1
+				}
+			]
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "geckling:komodo_normal",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	}
+}
