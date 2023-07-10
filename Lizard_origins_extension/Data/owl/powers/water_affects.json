@@ -9,7 +9,7 @@
 		"duration_per_stack": 10,
 		"effects": [
 			{
-				"effect": "minecraft:weakness",
+				"effect": "minecraft:slowness",
 				"amplifier": 0,
 				"is_ambient": false,
 				"show_particles": false,
