@@ -11,7 +11,7 @@
 		"owl:boost",
 		"owl:size",
 		"owl:health",
-		"owl:sword"
+		"owl:water_affects"
 	],
 	"icon": "minecraft:spruce_sapling",
 	"order": 14,
